@@ -89,4 +89,8 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         default: break
         }
     }
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        UIApplication.shared.openURL((NSURL(string: "https://www.16personalities.com/infj-personality")! as URL))
+    }
 }
