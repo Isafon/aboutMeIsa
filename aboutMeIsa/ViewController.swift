@@ -9,7 +9,13 @@ import UIKit
 
 class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
 
+ //image views:
+    @IBOutlet weak var photo2ImageView: UIImageView!
     
+    @IBOutlet weak var photo5ImageView: UIImageView!
+    @IBOutlet weak var photo4ImageView: UIImageView!
+    @IBOutlet weak var photo3ImageView: UIImageView!
+    @IBOutlet weak var photo1ImageView: UIImageView!
     @IBOutlet weak var isaImageView: UIImageView!
     
     @IBOutlet weak var backButton: UIButton!
@@ -81,7 +87,11 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         viewPickerIsa.dataSource = self
         viewPickerIsa.delegate = self
        // labelDivider.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
-        
+        photo1ImageView.isHidden = true
+        photo2ImageView.isHidden = true
+        photo3ImageView.isHidden = true
+        photo4ImageView.isHidden = true
+        photo5ImageView.isHidden = true
     }
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         
@@ -108,7 +118,11 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         descriptionLabel.isHidden = true
         viewPickerIsa.isHidden = true
         descriptionLabelColor.isHidden = true
-        
+        photo1ImageView.isHidden = false
+        photo2ImageView.isHidden = false
+        photo3ImageView.isHidden = false
+        photo4ImageView.isHidden = false
+        photo5ImageView.isHidden = false
         
         
     }
@@ -122,6 +136,12 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         false
         descriptionLabelColor.isHidden =
         false
+        photo1ImageView.isHidden = true
+        photo2ImageView.isHidden = true
+        photo3ImageView.isHidden = true
+        photo4ImageView.isHidden = true
+        photo5ImageView.isHidden = true
+        
     }
     
 }

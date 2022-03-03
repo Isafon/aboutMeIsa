@@ -130,6 +130,26 @@
                                     <action selector="backButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhk-e7-ThB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo1" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-uX-h9g">
+                                <rect key="frame" x="105" y="100" width="205" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo2" translatesAutoresizingMaskIntoConstraints="NO" id="fA5-SP-jO2">
+                                <rect key="frame" x="43" y="286" width="327" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo3" translatesAutoresizingMaskIntoConstraints="NO" id="jgb-2V-kdg">
+                                <rect key="frame" x="7" y="464" width="169" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo5" translatesAutoresizingMaskIntoConstraints="NO" id="Lzv-vq-PDV">
+                                <rect key="frame" x="228" y="464" width="174" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo4" translatesAutoresizingMaskIntoConstraints="NO" id="BnO-bG-GXN">
+                                <rect key="frame" x="25" y="609" width="364" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.60093778371810913" green="0.91945189237594604" blue="0.8027462363243103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -141,6 +161,11 @@
                         <outlet property="greenOrGoldSegment" destination="mKz-iM-fj6" id="L11-xo-PfC"/>
                         <outlet property="hobbiesButtonTapped" destination="u82-Fr-wsg" id="wqD-Xl-5mO"/>
                         <outlet property="isaImageView" destination="65e-hj-80T" id="kqa-Bj-0Ps"/>
+                        <outlet property="photo1ImageView" destination="IK3-uX-h9g" id="E5a-6D-uBo"/>
+                        <outlet property="photo2ImageView" destination="fA5-SP-jO2" id="scP-Pg-pN3"/>
+                        <outlet property="photo3ImageView" destination="jgb-2V-kdg" id="uF2-PK-Gdc"/>
+                        <outlet property="photo4ImageView" destination="Lzv-vq-PDV" id="r9x-f8-L8z"/>
+                        <outlet property="photo5ImageView" destination="BnO-bG-GXN" id="Nte-Ak-mB3"/>
                         <outlet property="viewPickerIsa" destination="5m7-CJ-a8P" id="AIW-7U-q0C"/>
                     </connections>
                 </viewController>
@@ -150,6 +175,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo1" width="737" height="733"/>
+        <image name="photo2" width="733" height="729"/>
+        <image name="photo3" width="810" height="1280"/>
+        <image name="photo4" width="960" height="1280"/>
+        <image name="photo5" width="960" height="1280"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
