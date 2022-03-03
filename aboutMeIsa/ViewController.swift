@@ -11,7 +11,8 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
 
  //image views:
     @IBOutlet weak var photo2ImageView: UIImageView!
-    
+    @IBOutlet weak var photo7ImageView: UIImageView!
+    @IBOutlet weak var photo6ImageView: UIImageView!
     @IBOutlet weak var photo5ImageView: UIImageView!
     @IBOutlet weak var photo4ImageView: UIImageView!
     @IBOutlet weak var photo3ImageView: UIImageView!
@@ -92,6 +93,8 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         photo3ImageView.isHidden = true
         photo4ImageView.isHidden = true
         photo5ImageView.isHidden = true
+        photo6ImageView.isHidden = true
+        photo7ImageView.isHidden = true
     }
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         
@@ -123,7 +126,8 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         photo3ImageView.isHidden = false
         photo4ImageView.isHidden = false
         photo5ImageView.isHidden = false
-        
+        photo6ImageView.isHidden = false
+        photo7ImageView.isHidden = false
         
     }
     
@@ -141,7 +145,8 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         photo3ImageView.isHidden = true
         photo4ImageView.isHidden = true
         photo5ImageView.isHidden = true
-        
+        photo6ImageView.isHidden = true
+        photo7ImageView.isHidden = true
     }
     
 }
