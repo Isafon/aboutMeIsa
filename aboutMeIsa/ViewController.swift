@@ -83,9 +83,10 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         {
         case 0:
             descriptionLabel.text = "Those with Green color personality strengths tend to be perfectionistic, analytical, conceptual, cool, calm, inventive and logical. They seek knowledge and understanding as well as always looking for explanations and answers. Greens have a large vocabulary and can argue both sides of an issue. Often, Greens take the time to concentrate and give correct answers."
+            descriptionLabel.backgroundColor = .systemGreen
         case 1:
             descriptionLabel.text = "Those with Gold color personality strengths tend to be loyal, dependable, organized, thorough, sensible, punctual and caring. They notice and remember facts, like directions and instructions, set deadlines and want them to be met. They enjoy check lists and checking things off the list. Golds can be good with money and like to have things balanced and on track. Golds are good organizers and see that time is importan. They don’t like to waste it and every minute is important."
-            
+            descriptionLabel.backgroundColor = .systemYellow
         default: break
         }
     }
