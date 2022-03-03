@@ -9,15 +9,22 @@ import UIKit
 
 class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataSource {
 
-    @IBOutlet weak var isaImageView: UIImageView!
-
     
-//segmented controller:
+    @IBOutlet weak var isaImageView: UIImageView!
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    
+    //segmented controller:
+    @IBOutlet weak var descriptionLabelColor: UILabel!
     
     @IBOutlet weak var greenOrGoldSegment: UISegmentedControl!
     
     @IBOutlet weak var descriptionLabel: UITextView!
     
+ // Hobbies button
+    
+    @IBOutlet weak var hobbiesButtonTapped: UIButton!
     
     
     
@@ -73,7 +80,7 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         
         viewPickerIsa.dataSource = self
         viewPickerIsa.delegate = self
-        
+       // labelDivider.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         
     }
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
@@ -94,4 +101,27 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         
         UIApplication.shared.openURL((NSURL(string: "https://www.16personalities.com/infj-personality")! as URL))
     }
+    
+    @IBAction func onHobbiesButtonTapped(_ sender: UIButton) {
+        isaImageView.isHidden = true
+        greenOrGoldSegment.isHidden = true
+        descriptionLabel.isHidden = true
+        viewPickerIsa.isHidden = true
+        descriptionLabelColor.isHidden = true
+        
+        
+        
+    }
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        isaImageView.isHidden = false
+        greenOrGoldSegment.isHidden = false
+        descriptionLabel.isHidden =
+        false
+        viewPickerIsa.isHidden =
+        false
+        descriptionLabelColor.isHidden =
+        false
+    }
+    
 }
